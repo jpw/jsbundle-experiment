@@ -14,4 +14,4 @@ const updateStatus = function (message) {
 updateStatus('index.js ran');
 updateStatus(a());
 updateStatus(b());
-updateStatus('the answer to life and everything is: '+ answer.toString());
+updateStatus('apparently the answer is: '+ answer.toString());
