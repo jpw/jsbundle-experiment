@@ -1,7 +1,6 @@
 .DS_Store
 
 # node project ignore defaults:
-
 # Logs
 logs
 *.log
