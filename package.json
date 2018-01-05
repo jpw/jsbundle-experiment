@@ -11,6 +11,10 @@
   "dependencies": {
     "express": "^4.16.2",
     "google-closure-compiler-js": "^20170910.0.1",
-    "rollup": "^0.51.8"
+    "rollup": "^0.51.8",
+    "the-answer": "^1.0.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }

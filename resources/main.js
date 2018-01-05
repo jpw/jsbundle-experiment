@@ -1,6 +1,7 @@
 
 import a from "./a.js";
 import b from "./b.js";
+import answer from 'the-answer';
 
 const list = document.getElementById('status');
 const updateStatus = function (message) {
@@ -13,3 +14,4 @@ const updateStatus = function (message) {
 updateStatus('index.js ran');
 updateStatus(a());
 updateStatus(b());
+updateStatus('the answer to life and everything is: '+ answer.toString());
