@@ -4,7 +4,7 @@
   "description": "An experiment in bundling JS for the browser from a variety of sources",
   "main": "app.js",
   "scripts": {
-    "build-js": "./node_modules/rollup/bin/rollup resources/index.js --o public/js/bundle-es6.js --f es && ./node_modules/google-closure-compiler-js/cmd.js public/js/bundle-es6.js > public/js/bundle-es5.js"
+    "build-js": "./node_modules/rollup/bin/rollup resources/main.js --o public/js/bundle-es6.js --f es && ./node_modules/google-closure-compiler-js/cmd.js public/js/bundle-es6.js > public/js/bundle-es5.js"
   },
   "author": "",
   "license": "ISC",
