@@ -4,17 +4,20 @@
   "description": "An experiment in bundling JS for the browser from a variety of sources",
   "main": "app.js",
   "scripts": {
-    "build-js": "./node_modules/rollup/bin/rollup --config config/rollup.config.js --watch && ./node_modules/google-closure-compiler-js/cmd.js public/js/bundle-es6.js > public/js/bundle-es5.js"
+    "build-js": "rollup --config config/rollup.config.js --watch && ./node_modules/google-closure-compiler-js/cmd.js  public/js/bundle-es6.js > public/js/bundle-es5.js",
+    "build-css": "node-sass --include-path scss resources/scss/main.scss  public/css/main.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@springernature/global-grid": "0.0.1",
     "express": "^4.16.2",
     "google-closure-compiler-js": "^20170910.0.1",
     "rollup": "^0.51.8",
     "the-answer": "^1.0.0"
   },
   "devDependencies": {
+    "node-sass": "^4.7.2",
     "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
