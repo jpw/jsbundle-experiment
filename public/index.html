@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>jsbundle experiment</title>
 
-	<!-- resources symlinked to test loading modules individually (if using http2): <script type="module" src="resources/index.js"></script> -->
+	<!-- resources symlinked to test loading modules individually (if using http2): <script type="module" src="resources/js/index.js"></script> -->
 	<script type="module" src="js/bundle-es6.js"></script> 
 	<script nomodule src="js/bundle-es5.js"></script>
 	<style>
@@ -35,7 +35,9 @@
 		<h2>Features</h2>
 
 		<ol>
-			<li>If this page background is blue, SASS is working.</li>
+			<li>SASS: If this page background is blue, SASS is working.</li>
+			<li><i>watch</i>-ing of resources via <code>nodemon</code>. Tried using the <code>--watch</code> flags native to Rollup & Sass, but having <code>nodemon</code> do
+				all watching neatly groups output from both watch processes (I was unsuccessful getting Rollup to watch both SASS & JS, but that ay be another option). Just run <code>npm run watch</code>.</li>
 		</ol>
 	</main>
 </body>

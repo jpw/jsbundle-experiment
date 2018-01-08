@@ -2,13 +2,16 @@
   "name": "jsbundle-experiment",
   "version": "1.0.0",
   "description": "An experiment in bundling JS for the browser from a variety of sources",
+  "author": "https://github.com/jpw/",
+  "license": "ISC",
   "main": "app.js",
   "scripts": {
-    "build-js": "rollup --config config/rollup.config.js --watch && ./node_modules/google-closure-compiler-js/cmd.js  public/js/bundle-es6.js > public/js/bundle-es5.js",
-    "build-css": "node-sass --include-path scss resources/scss/main.scss  public/css/main.css"
+    "build-js":   "rollup --config config/rollup.config.js && ./node_modules/google-closure-compiler-js/cmd.js  public/js/bundle-es6.js > public/js/bundle-es5.js",
+    "build-css":  "node-sass --include-path scss resources/scss/main.scss  public/css/main.css",
+    "watch-css":  "nodemon -e scss --watch resources/scss -x \"npm run build-css\"",
+    "watch-js":   "nodemon -e js --watch resources/js -x \"npm run build-js\"",
+    "watch":      "npm run watch-js & npm run watch-css"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@springernature/global-grid": "0.0.1",
     "express": "^4.16.2",
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
+    "nodemon": "^1.14.8",
     "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
