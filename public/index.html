@@ -19,15 +19,18 @@
 		li {
 			margin: 0.7rem auto;
 		}
+		em {
+			font-weight: bold;
+		}
 	</style>
 	<link href="css/main.css" rel="stylesheet">
-
 </head>
+
 <body>
 	<main>
 		<h1>jsbundle-experiment</h1>
 
-		<h2>dynamic status:</h2>
+		<h2>Dynamic status</h2>
 		<ol id="status">
 			<li>loading</li>
 		</ol>
@@ -35,9 +38,12 @@
 		<h2>Features</h2>
 
 		<ol>
-			<li>SASS: If this page background is blue, SASS is working.</li>
-			<li><i>watch</i>-ing of resources via <code>nodemon</code>. Tried using the <code>--watch</code> flags native to Rollup & Sass, but having <code>nodemon</code> do
-				all watching neatly groups output from both watch processes (I was unsuccessful getting Rollup to watch both SASS & JS, but that ay be another option). Just run <code>npm run watch</code>.</li>
+			<li><em>SASS</em>: if this page background is blue, SASS is working.</li>
+			<li><em>Tree shaking aka removing dead-code</em>: should not see "module B ran" in the above status list, and it should not be in the <a href="js/bundle-es6.js">bundled source</a>.</li>
+			<li><em><i>watch</i>-ing of resources via <code>nodemon</code></em>: tried using the <code>--watch</code> flags native to Rollup & Sass, 
+				but having <code>nodemon</code> do all watching neatly groups output from both watch processes 
+				(I was unsuccessful getting Rollup to watch both SASS & JS, but that ay be another option).
+				Just run <code>npm run watch</code>.</li>
 		</ol>
 	</main>
 </body>

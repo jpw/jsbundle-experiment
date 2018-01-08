@@ -1,6 +1,5 @@
 
 import a from "./a.js";
-import b from "./b.js";
 import answer from 'the-answer';
 
 const list = document.getElementById('status');
@@ -10,8 +9,6 @@ const updateStatus = function (message) {
 	list.appendChild(entry);
 }
 
-
 updateStatus('index.js ran');
 updateStatus(a());
-updateStatus(b());
 updateStatus('The answer is: '+ answer.toString());
