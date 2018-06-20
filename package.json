@@ -14,15 +14,15 @@
     "watch": "npm run watch-js & npm run watch-css"
   },
   "dependencies": {
-    "@springernature/global-grid": "0.0.1",
-    "express": "^4.16.2",
-    "google-closure-compiler-js": "^20170910.0.1",
-    "rollup": "^0.51.8",
-    "the-answer": "^1.0.0"
+    "express": "^4.16.2"
   },
   "devDependencies": {
+    "@springernature/global-grid": "0.0.1",
+    "google-closure-compiler-js": "^20170910.0.1",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup": "^0.51.8",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "the-answer": "^1.0.0"
   }
 }
