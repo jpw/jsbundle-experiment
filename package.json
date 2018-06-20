@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An experiment in bundling JS for the browser from a variety of sources",
   "author": "https://github.com/jpw/",
+  "repository": "https://github.com/jpw/jsbundle-experiment",
   "license": "ISC",
   "main": "app.js",
   "scripts": {
