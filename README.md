@@ -11,9 +11,9 @@ A little demo of bundling JS from a variety of sources for consumption by ES5 &a
 
 ## to use TODO check me
 
-Clone this repo, then: `npm i`
+Clone this repo, then: `npm i` to install npm packages
 
-Build the assets: `npm run build-js`
+Build the assets: `npm run build-all`
 
 Run the express server: `node app`
 

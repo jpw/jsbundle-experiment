@@ -8,6 +8,7 @@
   "scripts": {
     "build-js": "rollup --config config/rollup.config.js && ./node_modules/google-closure-compiler-js/cmd.js  public/js/bundle-es6.js > public/js/bundle-es5.js",
     "build-css": "node-sass --include-path scss resources/scss/main.scss  public/css/main.css",
+    "build-all": "npm run build-js && npm run build-css",
     "watch-css": "nodemon -e scss --watch resources/scss -x \"npm run build-css\"",
     "watch-js": "nodemon -e js --watch resources/js -x \"npm run build-js\"",
     "watch": "npm run watch-js & npm run watch-css"
