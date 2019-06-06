@@ -13,6 +13,6 @@ A little demo of bundling JS from a variety of sources for consumption by ES5 &a
 
 1. Clone this repo, `cd` into it.
 1. if you have `nvm` installed, run `nvm use` then `npm ci` else `npm i`
-1. Build the JS & CSS assets: `npm run build`
+1. Build the JS & CSS assets: `npm run build-all`
 1. Run the express server: `node app`
 1. [Look at `http://localhost:3000/`](http://localhost:3000/)
