@@ -1,6 +1,6 @@
 
-import a from "./a.js";
-import answer from 'the-answer';
+import a from "./a.js"; // import local module
+import answer from 'the-answer'; // import from node_modules
 
 const list = document.getElementById('status');
 const updateStatus = function (message) {

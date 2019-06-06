@@ -5,7 +5,7 @@
 	<title>jsbundle experiment</title>
 
 	<!-- resources symlinked to test loading modules individually (if using http2): <script type="module" src="resources/js/index.js"></script> -->
-	<script type="module" src="js/bundle-es6.js"></script> 
+	<script type="module" src="js/bundle-es6.js"></script>
 	<script nomodule src="js/bundle-es5.js"></script>
 	<style>
 		body {
@@ -40,9 +40,9 @@
 		<ol>
 			<li><em>SASS</em>: if this page background is blue, SASS is working.</li>
 			<li><em>Tree shaking aka removing dead-code</em>: should not see "module B ran" in the above status list, and it should not be in the <a href="js/bundle-es6.js">bundled source</a>.</li>
-			<li><em><i>watch</i>-ing of resources via <code>nodemon</code></em>: tried using the <code>--watch</code> flags native to Rollup & Sass, 
-				but having <code>nodemon</code> do all watching neatly groups output from both watch processes 
-				(I was unsuccessful getting Rollup to watch both SASS & JS, but that ay be another option).
+			<li><em><i>watch</i>-ing of resources via <code>nodemon</code></em>: tried using the <code>--watch</code> flags native to Rollup & Sass,
+				but having <code>nodemon</code> do all watching neatly groups output from both watch processes
+				(I was unsuccessful getting Rollup to watch both SASS & JS, but that may be another option).
 				Just run <code>npm run watch</code>.</li>
 		</ol>
 	</main>
