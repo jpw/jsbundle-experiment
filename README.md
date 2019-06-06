@@ -9,12 +9,10 @@ A little demo of bundling JS from a variety of sources for consumption by ES5 &a
 1. We want to *watch* source directories: _accomplished via rollup's_ watch _CLI option_
 
 
-## to use TODO check me
+## To use
 
-Clone this repo, then: `npm i`
-
-Build the assets: `npm run build-js`
-
-Run the express server: `node app`
-
-[Look at `http://localhost:3000/`](http://localhost:3000/)
+1. Clone this repo, `cd` into it.
+1. if you have `nvm` installed, run `nvm use` then `npm ci` else `npm i`
+1. Build the JS & CSS assets: `npm run build`
+1. Run the express server: `node app`
+1. [Look at `http://localhost:3000/`](http://localhost:3000/)
