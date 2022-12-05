@@ -15,7 +15,7 @@
     "watch": "npm run watch-js & npm run watch-css"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@springernature/global-grid": "^1.0.0",
